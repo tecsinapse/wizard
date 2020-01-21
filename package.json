@@ -74,7 +74,9 @@
     "rollup-plugin-node-globals": "^1.4.0",
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
-    "source-map-explorer": "^2.0.0"
+    "rollup-plugin-typescript2": "^0.25.3",
+    "source-map-explorer": "^2.0.0",
+    "typescript": "^3.7.5"
   },
   "files": [
     "build",

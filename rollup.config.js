@@ -1,7 +1,7 @@
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import commonjs from 'rollup-plugin-commonjs';
 import localResolve from 'rollup-plugin-local-resolve';
-
+import typescript from 'rollup-plugin-typescript2';
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
 import filesize from 'rollup-plugin-filesize';
@@ -10,8 +10,12 @@ import pkg from './package.json';
 
 export default [
   {
-    input: 'src/index.js',
+    input: 'src/index.ts',
     output: [
+      {
+        file: pkg.module,
+        format: 'esm',
+      },
       {
         file: pkg.main,
         name: pkg.name,
@@ -38,6 +42,9 @@ export default [
     ],
 
     plugins: [
+      typescript({
+        typescript: require('typescript'), // eslint-disable-line global-require
+      }),
       peerDepsExternal(),
       babel({
         exclude: ['node_modules/**'],
