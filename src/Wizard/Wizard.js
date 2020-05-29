@@ -60,7 +60,7 @@ const useStyles = makeStyles(theme => ({
     minWidth: '25%',
   },
 }));
-export const Wizard = ({
+const Wizard = ({
   children,
   activeStep,
   onChange,
@@ -217,3 +217,5 @@ Wizard.propTypes = {
     nextMobileLabel: PropTypes.string,
   }),
 };
+
+export default Wizard;

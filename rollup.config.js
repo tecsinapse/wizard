@@ -10,7 +10,7 @@ import pkg from './package.json';
 
 export default [
   {
-    input: 'src/index.ts',
+    input: 'src/index.d.ts',
     output: [
       {
         file: pkg.module,
