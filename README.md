@@ -1,7 +1,8 @@
 # Iniciando
 
-[![Build Status](https://travis-ci.org/tecsinapse/wizard.svg?branch=master)](https://travis-ci.org/tecsinapse/wizard)
+Moved to https://github.com/tecsinapse/ui-kit
 
+[![Build Status](https://travis-ci.org/tecsinapse/wizard.svg?branch=master)](https://travis-ci.org/tecsinapse/wizard)
 
 
 ***@tecsinapse/wizard*** é um componente wizard para facilitar a vida do dev react ;)
